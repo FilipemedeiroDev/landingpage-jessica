@@ -8,6 +8,7 @@
     border-bottom: 2px solid #e06eb1;
     box-shadow: 2px 0 20px 0 #da258e;
     background-color: #ee8bd7;
+    padding-left: 40px;
 
     position: fixed;
     top: 0;
@@ -55,8 +56,8 @@
 }
 
 .menu {
-    width: 40px;
     display: none;
+    width: 50px;
     cursor: pointer;
 }
 
@@ -73,6 +74,10 @@
 
 
 @media (max-width: 760px) {
+    .header {
+        padding-left: 10px;
+    }
+
     .nav {
         display: none;
     }
