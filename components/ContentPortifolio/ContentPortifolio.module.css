@@ -1,21 +1,18 @@
 .content {
     display: flex;
     align-items: center;
-    flex-direction: row-reverse;
+    flex-direction: row;
     width: 100%;
-    padding: 16% 10% 2% 10%;
     gap: 20%;
-    margin-bottom: -180px;
 }
 
 .content:nth-child(2) {
-    flex-direction: row;
+    flex-direction: row-reverse;
 }
 
 .content:nth-child(4) {
-    flex-direction: row;
+    flex-direction: row-reverse;
 }
-
 
 .contentText {
     display: flex;
@@ -38,7 +35,6 @@
     text-align: justify;
 }
 
-
 .contentImg {
     display: flex;
     align-items: center;
@@ -58,8 +54,6 @@
 
     .content {
         flex-direction: column;
-        padding: 40% 10% 0 10%;
-        margin-bottom: -70px;
     }
 
     .content:nth-child(2) {
@@ -77,10 +71,15 @@
 
     .contentText {
         margin-top: 50px;
+        align-items: center;
     }
 
     .title {
         font-size: 20px;
+    }
+
+    .text {
+        text-align: center;
     }
 }
 

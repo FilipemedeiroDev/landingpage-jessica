@@ -11,10 +11,20 @@
     font-size: 20px;
     margin-top: 20px;
 
-    cursor: pointer;
     transition: 0.3s;
+    cursor: pointer;
+}
+
+.button:last-child {
+    margin-bottom: 20px;
 }
 
 .button:hover {
     opacity: 0.8;
+}
+
+@media (max-width: 760px) {
+    .button {
+        width: 90%;
+    }
 }
