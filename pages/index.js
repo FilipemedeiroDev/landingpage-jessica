@@ -1,9 +1,6 @@
-
 import styles from '../styles/Home.module.css';
-import Image from 'next/image';
-import Link from 'next/link';
-import ProfileImage from '../public/images/profile.jpg';
-import IconWhats from '../public/icons/whats.png'
+import Avatar from '../components/Avatar';
+import Button from '../components/Button';
 
 export default function Home() {
   return (
@@ -14,22 +11,21 @@ export default function Home() {
             Olá, sou a Jessica Medeiro
           </span>
           <p className={styles.text}>
-            Lorem ipsum dolor sit amet,consectetuer adipiscing elit. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante. Aliquam erat volutpat. Nunc auctor. Mauris pretium quam et urna. Fusce nibh. Duis risus. Curabitur sagittis hendrerit ante. Aliquam erat volutpat. Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat. Duis condimentum augue id magna semper rutrum. Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit. Proin pede metus, vulputate nec, fermentum fringilla, vehicula vitae, justo.
+            Seja bem vinda !!!
+            Meu nome é Jéssica, sou casada há 5 anos, tenho 2 filhas.
+            Em 2019 iniciei na área da beleza e desde então tenho me dedicado a aprender e a me aperfeiçoar no embelezamento do olhar.
+            Saiba que eu prezo pela beleza natural e tenho como diferencial respeitar as suas características e fazer você ficar ainda mais linda sem perder a delicadeza feminina.
+            Aqui você pode ver alguns dos meus trabalhos e agendar o seu horário.
           </p>
-          <Link href={'portifolio'}>
-            <button className={styles.button}>
-              Conheça meu trabalho
-            </button>
-          </Link>
+
+          <Button
+            textButton={'Conheça meu trabalho'}
+            navigation={'portifolio'}
+          />
+
         </div>
         <div className={styles.contentImg}>
-          <div className={styles.img}>
-            <Image
-              src={ProfileImage}
-              alt='foto de Jessica Medeiro'
-              style={{ borderRadius: '50%' }}
-            />
-          </div>
+          <Avatar />
         </div>
       </div>
     </div >

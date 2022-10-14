@@ -1,91 +1,48 @@
-import styles from '../../styles/Portifolio.module.css'
-import Image from 'next/image';
-import Link from 'next/link';
+import styles from './Portifolio.module.css'
 import VolumeBrasileiroImage from '../../public/images/volumebrasileiro1.jpg';
 import FioAFioImage from '../../public/images/fioafio.jpg';
 import LashLifting from '../../public/images/lashlifting.jpg';
-import Design from '../../public/images/design.jpg'
+import Design from '../../public/images/design.jpg';
+import ContentPortifolio from '../../components/ContentPortifolio';
 
-
-export default function Portifólio() {
+export default function Portifolio() {
 
     return (
         <div className={styles.container}>
-            <div className={styles.content}>
-                <div className={styles.contentText}>
-                    <span className={styles.title}>Volume Brasileiro</span>
-                    <p className={styles.text}>
-                        Lorem ipsum dolor sit amet,consectetuer adipiscing elit. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante. Aliquam erat volutpat. Nunc auctor. Mauris pretium quam et urna. Fusce nibh. Duis risus. Curabitur sagittis hendrerit ante. Aliquam erat volutpat. Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat. Duis condimentum augue id magna semper rutrum. Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit. Proin pede metus, vulputate nec, fermentum fringilla, vehicula vitae, justo. Fusce consectetuer risus a nunc. Aliquam ornare wisi eu metus. Integer pellentesque quam vel velit.
-                    </p>
-                </div>
-                <div className={styles.contentImg}>
-                    <div className={styles.img}>
-                        <Image
-                            src={VolumeBrasileiroImage}
-                            alt='foto modelo'
-                        />
-                    </div>
-                </div>
-            </div>
-            <div className={styles.content}>
-                <div className={styles.contentImg}>
-                    <div className={styles.img}>
-                        <Image
-                            src={FioAFioImage}
-                            alt='foto modelo'
-                            width={'560px'}
-                        />
-                    </div>
-                </div>
-                <div className={styles.contentText}>
-                    <span className={styles.title}>Fio a Fio</span>
-                    <p className={styles.text}>
-                        Lorem ipsum dolor sit amet,consectetuer adipiscing elit. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante. Aliquam erat volutpat. Nunc auctor. Mauris pretium quam et urna. Fusce nibh. Duis risus. Curabitur sagittis hendrerit ante. Aliquam erat volutpat. Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat. Duis condimentum augue id magna semper rutrum. Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit. Proin pede metus, vulputate nec, fermentum fringilla, vehicula vitae, justo. Fusce consectetuer risus a nunc. Aliquam ornare wisi eu metus. Integer pellentesque quam vel velit.
-                    </p>
-                </div>
-            </div>
-            <div className={styles.content}>
-                <div className={styles.contentText}>
-                    <span className={styles.title}>Lash Lifting</span>
-                    <p className={styles.text}>
-                        Lorem ipsum dolor sit amet,consectetuer adipiscing elit. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante. Aliquam erat volutpat. Nunc auctor. Mauris pretium quam et urna. Fusce nibh. Duis risus. Curabitur sagittis hendrerit ante. Aliquam erat volutpat. Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat. Duis condimentum augue id magna semper rutrum. Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit. Proin pede metus, vulputate nec, fermentum fringilla, vehicula vitae, justo. Fusce consectetuer risus a nunc. Aliquam ornare wisi eu metus. Integer pellentesque quam vel velit. Duis pulvinar.
-                    </p>
-                </div>
-                <div className={styles.contentImg}>
-                    <div className={styles.img}>
-                        <Image
-                            src={LashLifting}
-                            alt='foto modelo'
-                            width={'580px'}
-                            height={'560px'}
-                        />
-                    </div>
-                </div>
-            </div>
-            <div className={styles.content}>
-                <div className={styles.contentImg}>
-                    <div className={styles.img}>
-                        <Image
-                            src={Design}
-                            alt='foto modelo'
-                            width={'580px'}
-                            height={'550px'}
-                        />
-                    </div>
-                </div>
-                <div className={styles.contentText}>
-                    <span className={styles.title}>Design de sobrancelhas</span>
-                    <p className={styles.text}>
-                        Lorem ipsum dolor sit amet,consectetuer adipiscing elit. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante. Aliquam erat volutpat. Nunc auctor. Mauris pretium quam et urna. Fusce nibh. Duis risus. Curabitur sagittis hendrerit ante. Aliquam erat volutpat. Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat. Duis condimentum augue id magna semper rutrum. Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit. Proin pede metus, vulputate nec, fermentum fringilla, vehicula vitae, justo. Fusce consectetuer risus a nunc. Aliquam ornare wisi eu metus. Integer pellentesque quam vel velit. Duis pulvinar.
-                    </p>
-                </div>
+            <ContentPortifolio
+                image={FioAFioImage}
+                title='Fio a Fio'
+                description='Fio a fio clássico ou fio a fio efeito back é uma técnica que consiste em aplicar um fio sintético em cada fio natural, alongando os cílios e trazendo um leve volume deixandos cilios além de alongados mais curvados mantendo a naturalidade do olhar.'
+                textButton='Entre em contato'
+                navigation='contato'
+            />
+            <ContentPortifolio
+                image={VolumeBrasileiroImage}
+                title='Volume Brasileiro'
+                description='O Volume brasileiro é o queridinho do momento, isso porque além de alongar ele também dá volume aos cílios sem perder a delicadeza no olhar.'
+                textButton='Entre em contato'
+                navigation='contato'
+            />
 
-            </div>
-            <Link href={'contato'} >
-                <a className={styles.button}>
-                    Entre em contato
-                </a>
-            </Link>
-        </div>
+            <ContentPortifolio
+                image={LashLifting}
+                title='Lash Lifting'
+                description='
+                O lash lifting cuida dos cílios para que eles fiquem com aspecto natural, de forma que é possível curvá-los,  e hidratá-los profundamente. A ideia é ter os cílios perfeitos sem precisar dar manutenção ou passar curvex.
+                Diferente da extensão de cílios no lash lifting não são usados fios artificiais e também não precisa de manutenção.
+                O procedimento leva em média 45 min é completamente indolor  e seu efeito tem duração de 4 a 8 semanas dependendo dos cuidados de cada pessoa.'
+                textButton='Entre em contato'
+                navigation='contato'
+            />
+
+
+            <ContentPortifolio
+                image={Design}
+                title='Design de sobrancelhas'
+                description='Antigamente era usado um padrão para as sobrancelhas, com isso o formato único de cada sobrancelha não era respeitado, hoje em dia o foco do design é fugir do “molde pronto” e, proporcionar sobrancelhas perfeitas respeitando as diferenças de cada rosto.'
+                textButton='Entre em contato'
+                navigation='contato'
+            />
+        </div >
     )
 }

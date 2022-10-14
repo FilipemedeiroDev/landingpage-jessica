@@ -1,0 +1,16 @@
+.img {
+    display: flex;
+    border: 4px solid #da258e;
+    box-shadow: 6px 0 10px 0 black;
+    border-radius: 50%;
+    width: 300px;
+
+
+    transform: rotate(45deg);
+}
+
+@media (max-width: 760px) {
+    .img {
+        width: 60%;
+    }
+}
