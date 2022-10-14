@@ -1,7 +1,7 @@
 import styles from './Contato.module.css';
 import Image from 'next/image';
 import Avatar from '../../components/Avatar';
-import IconWhats from '../../public/icons/IconWhats.png';
+import IconWhats from '../../public/icons/iconwhats.png';
 import IconInstagram from '../../public/icons/iconInstagram.png';
 
 export default function Contato() {
