@@ -5,7 +5,6 @@ import VolumeBrasileiroImage from '../../public/images/volumebrasileiro1.jpg';
 import FioAFioImage from '../../public/images/fioafio.jpg';
 import LashLifting from '../../public/images/lashlifting.jpg';
 import Design from '../../public/images/design.jpg'
-import IconWhats from '../../public/icons/whats.png'
 
 
 export default function Portifólio() {

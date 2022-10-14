@@ -32,11 +32,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Link href={'http://wa.me/5511947966822'} >
-        <a className={styles.iconWhats} target='_blank'>
-          <Image src={IconWhats} alt='icone whatsapp' />
-        </a>
-      </Link>
     </div >
   )
 }
