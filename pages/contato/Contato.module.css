@@ -32,6 +32,7 @@
     height: 40px;
     padding: 12px;
     border-radius: 10px;
+    box-shadow: 6px 4px 10px 0 black;
 
     display: flex;
     align-items: center;
